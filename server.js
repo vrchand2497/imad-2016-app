@@ -14,7 +14,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
     
-app.get('/ui/power.png', function (req, res) {
+app.get('/ui/power.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'power.jpg'));
 
 });
