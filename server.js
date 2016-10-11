@@ -13,10 +13,10 @@ app.get('/au1', function (req, res) {
   
 });
 app.get('/a2', function (req, res) {
-  res.send('this is second article');
+  res.sendFile(path.join(__dirname,'ui','au2.html'));
 });
 app.get('/a3', function (req, res) {
-  res.send('this is third article');
+  res.sendFile(path.join(__dirname,'ui','au3.html'));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
